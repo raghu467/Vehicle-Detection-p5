@@ -97,7 +97,9 @@ several configurations of window sizes and positions, with various overlaps in t
 
  
 <br>
- Here is the link to my final project-video.mp4 output
+ Here is the link to my final
+[project-video.mp4 output] (https://github.com/raghu467/Vehicle-Detection-p5/blob/master/project_video_out_1.mp4)
+ 
 
 
 
