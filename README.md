@@ -99,6 +99,18 @@ several configurations of window sizes and positions, with various overlaps in t
 <br>
  Here is the link to my final
 [project-video.mp4 output] (https://github.com/raghu467/Vehicle-Detection-p5/blob/master/project_video_out_1.mp4)
+
+
+The hurdles which I faced while implementing the pipeline were mainly related to detection accuracy.
+
+ we have 50 seconds worth of video to be processed(project_video) which is 30*50=150 frames.The accuracy of the classifier is 98% which should result around 3  false detections per frame. Any how Tracking detections from previous frames  and searching for cars near those tracked vehicles will reduce the false detections and improve tracking of vehicles, but it also introduces new problem: when we have vehicles that frequently change position from one frame to frame will  lead to increase in false detection.To over-come this problem we need a classifier with higher accuracy and also increased window overlap might improve the per-frame accuracy. Also if this pipeline is integrated with lane detection pipeline which was implmented in the previous project and we know the poisition of the lane we can better track the vechiles by ignoring the cross-traffic.
+
+The pipeline is probably most likely to fail when the vehicles don't resemble those in the training dataset.
+Also lighting and environmental conditions effect the accuracy of the classifier. 
+As stated above, oncoming cars are an issue, also distant cars. 
+
+Given more time and bigger data set using which better accuracy can be produced. Also if the steering angle is know to the algorithm this can help in improving the ROI to find vehicles on the curves.
+
  
 
 
