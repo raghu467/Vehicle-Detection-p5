@@ -8,7 +8,7 @@ The data set used for training the clasifier contains images of vehicle and non-
 **
 Number of Vehicle images in data_set=  8792
 Number of Vehicle images in data_set=  8968
-**
+**.
 Data set contains the following vehicle images:<br>
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/Vehicle._data_set.png)
 Data set contains the following Vehicle Images:<br>
@@ -32,7 +32,7 @@ Next, in the section titled " Extract Features for Training Datasets and Define 
 	orient = 11<br>
 	pix_per_cell = 16<br>
 	cell_per_block = 2<br>
-**
+**.
 
 
 The above mentioned Hog parameters were finalized based on the SVM prediction perfomance.
