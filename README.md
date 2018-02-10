@@ -5,7 +5,10 @@ Explain how (and identify where in your code) you extracted HOG features from th
 
 The HOG features are extracted from the image using the hog function from skimage.feature<br>
 The data set used for training the clasifier contains images of vehicle and non-vehicles of dimnetion (64*64)<br>
-
+**
+Number of Vehicle images in data_set=  8792
+Number of Vehicle images in data_set=  8968
+**
 Data set contains the following vehicle images:<br>
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/Vehicle._data_set.png)
 Data set contains the following Vehicle Images:<br>
@@ -20,6 +23,7 @@ The figure below shows a comparison of a car and non-car images and their associ
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/non_car_hog.png)
 
 Next, in the section titled " Extract Features for Training Datasets and Define Labels Vector, Shuffle and Split into Training and Test sets" I define parameters for HOG feature extraction and extract features for the entire Training Data-set. These feature sets  which are extracted are  then combined and a label vector is defined which tell if the feature belongs to car or non-car(1 for cars, 0 for non-cars). The features and labels are then shuffled and split into training and test sets in preparation to be fed to a linear support vector machine (SVM) classifier. Various parameter value combinations were explored for the following parameters.
+**
 	orientation=11<br>
 	spatial_size = (64, 64)<br>
 	hist_bins = 16    # Number of histogram bins<br>
@@ -28,7 +32,7 @@ Next, in the section titled " Extract Features for Training Datasets and Define 
 	orient = 11<br>
 	pix_per_cell = 16<br>
 	cell_per_block = 2<br>
-
+**
 
 
 The above mentioned Hog parameters were finalized based on the SVM prediction perfomance.
