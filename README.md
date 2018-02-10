@@ -79,20 +79,20 @@ several configurations of window sizes and positions, with various overlaps in t
     x_start=400
     x_stop=1000
     scale=1
-    xy_window=(64*scale,64*scale)
-<br>
+    xy_window=(64*scale,64*scale)<br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_1.png)
-## heat_map
-<br>
+## heat_map <br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_3.png)
-## Filtered heat_map (Tresholded Heat-map)
-<br>
+## Filtered heat_map (Tresholded Heat-map) <br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_4.png)
-## Labled heat_map
-<br>
+## Labled heat_map <br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_5.png)
-## Final Output with Lables over-layed
-<br>
+## Final Output with Lables over-layed <br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_6.png)
 
  
