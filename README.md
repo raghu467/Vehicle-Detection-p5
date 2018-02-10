@@ -7,17 +7,17 @@ The HOG features are extracted from the image using the hog function from skimag
 The data set used for training the clasifier contains images of vehicle and non-vehicles of dimnetion (64*64)<br>
 
 Data set contains the following vehicle images:<br>
-Vehicle._data_set.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/Vehicle._data_set.png)
 Data set contains the following Vehicle Images:<br>
-Non_Vehicle_images.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/Non_Vehicle_images.png)
 
 
 The code for extracting HOG features from an image can be found in the function get_hog_features.
 The figure below shows a comparison of a car and non-car images and their associated histogram of oriented gradients,
 <br>
-Car_hog.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/Car_hog.png)
 <br>
-non_car_hog.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/non_car_hog.png)
 
 Next, in the section titled " Extract Features for Training Datasets and Define Labels Vector, Shuffle and Split into Training and Test sets" I define parameters for HOG feature extraction and extract features for the entire Training Data-set. These feature sets  which are extracted are  then combined and a label vector is defined which tell if the feature belongs to car or non-car(1 for cars, 0 for non-cars). The features and labels are then shuffled and split into training and test sets in preparation to be fed to a linear support vector machine (SVM) classifier. Various parameter value combinations were explored for the following parameters.
 orientation=11<br>
@@ -56,9 +56,9 @@ The following is the output of the all the windows drawn on the image which is b
 Note:Different window sizes were used to be able to faithfully detect the cars which are far and near both.
 The cars which are far have small size hence the window size is also reduced.
 
-All_Windows_scan_1.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/All_Windows_scan_1.png)
 <br>
-All_Windows_scan_2.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/All_Windows_scan_2.png)
 
 The car detection pipeline can be foudn in function "find_Car_in_image" in code.
 several configurations of window sizes and positions, with various overlaps in the X and Y directions were explored. The following four images show the configurations of all search windows in the final implementation.
@@ -71,7 +71,7 @@ several configurations of window sizes and positions, with various overlaps in t
     scale=2
     xy_window=(64*scale,64*scale)
     <br>
-pipeline_2.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_2.png)
 ## All windows_in_images
 
   	ystart = 380
@@ -81,19 +81,19 @@ pipeline_2.png
     scale=1
     xy_window=(64*scale,64*scale)
 <br>
-pipeline_1.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_1.png)
 ## heat_map
 <br>
-pipeline_3.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_3.png)
 ## Filtered heat_map (Tresholded Heat-map)
 <br>
-pipeline_4.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_4.png)
 ## Labled heat_map
 <br>
-pipeline_5.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_5.png)
 ## Final Output with Lables over-layed
 <br>
-pipeline_6.png
+![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_6.png)
 
  
 <br>
