@@ -6,7 +6,7 @@ Explain how (and identify where in your code) you extracted HOG features from th
 The HOG features are extracted from the image using the hog function from skimage.feature<br>
 The data set used for training the clasifier contains images of vehicle and non-vehicles of dimnetion (64*64)<br>
 
-**Number of Vehicle images in data_set=  8792
+**Number of Vehicle images in data_set=  8792<br>
 Number of Vehicle images in data_set=  8968**
 
 Data set contains the following vehicle images:<br>
