@@ -92,8 +92,18 @@ several configurations of window sizes and positions, with various overlaps in t
 ## Filtered heat_map (Tresholded Heat-map) <br>
 
 ## Load the Heat_map into the que to be able to track the previous heat map we have the 
-latest 8 heat maps save in the que which are Later Filtered. This trick helps us to track the vehicles in the image<br>
-
+## latest 8 heat maps save in the que which are Later Filtered. This trick helps us to track the vehicles in the image<br>
+    from collections import deque
+    Heat_map_que = deque(maxlen = 8)
+     #Check if the que is already full
+    if(len(Heat_map_que)==Heat_map_que.maxlen):
+        Heat_map_que.popleft()#Pop the oldest element
+    
+    Heat_map_que.append(heatmap_img)
+    count=0
+    #add Current Heatmap to the que
+    for count in range(0,len(Heat_map_que)):
+        Accum_heat_img=Accum_heat_img+Heat_map_que[count]
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_4.png)
 ## Labled heat_map <br>
 
