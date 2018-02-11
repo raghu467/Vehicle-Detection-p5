@@ -22,16 +22,17 @@ The figure below shows a comparison of a car and non-car images and their associ
 <br>
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/non_car_hog.png)
 
-Next, in the section titled " Extract Features for Training Datasets and Define Labels Vector, Shuffle and Split into Training and Test sets" I define parameters for HOG feature extraction and extract features for the entire Training Data-set. These feature sets  which are extracted are  then combined and a label vector is defined which tell if the feature belongs to car or non-car(1 for cars, 0 for non-cars). The features and labels are then shuffled and split into training and test sets in preparation to be fed to a linear support vector machine (SVM) classifier. Various parameter value combinations were explored for the following parameters.
-**orientation=11<br>
-spatial_size = (64, 64)<br>
-hist_bins = 16    # Number of histogram bins<br>
-n_channel='ALL'   # image color-components channels in feature extraction<br>
-color_space='YUV' #color space<br>
-orient = 11<br>
-pix_per_cell = 16<br>
-cell_per_block = 2<br>
-**.
+Next, in the section titled " Extract Features for Training Datasets and Define Labels Vector, Shuffle and Split into Training and Test sets" I define parameters for HOG feature extraction and extract features for the entire Training Data-set. These feature sets  which are extracted are  then combined and a label vector is defined which tell if the feature belongs to car or non-car(1 for cars, 0 for non-cars). The features and labels are then shuffled and split into training and test sets in preparation to be fed to a linear support vector machine (SVM) classifier. Various parameter value combinations were explored for the following parameters.<br>
+
+**orientation=11<br>**
+**spatial_size = (64, 64)**<br>
+**hist_bins = 16    # Number of histogram bins**<br>
+**n_channel='ALL'   # image color-components channels in feature extraction**<br>
+**color_space='YUV' #color space**<br>
+**orient = 11**<br>
+**pix_per_cell = 16**<br>
+**cell_per_block = 2**<br>
+**
 
 
 The above mentioned Hog parameters were finalized based on the SVM prediction perfomance.
@@ -86,11 +87,12 @@ several configurations of window sizes and positions, with various overlaps in t
 
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_1.png)
 ## heat_map <br>
+
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_3.png)
+## Filtered heat_map (Tresholded Heat-map) <br>
+
 ## Load the Heat_map into the que to be able to track the previous heat map we have the 
 latest 8 heat maps save in the que which are Later Filtered. This trick helps us to track the vehicles in the image<br>
-
-## Filtered heat_map (Tresholded Heat-map) <br>
 
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_4.png)
 ## Labled heat_map <br>
@@ -103,7 +105,7 @@ latest 8 heat maps save in the que which are Later Filtered. This trick helps us
  
 <br>
  Here is the link to my final
-[project-video.mp4 output] (https://github.com/raghu467/Vehicle-Detection-p5/blob/master/project_video_out_1.mp4)
+[project-video.mp4 output] (https://github.com/raghu467/Vehicle-Detection-p5/blob/master/project_video_master_out.mp4)
 
 
 The hurdles which I faced while implementing the pipeline were mainly related to detection accuracy.
@@ -117,10 +119,3 @@ As stated above, oncoming cars are an issue, also distant cars.
 Given more time and bigger data set using which better accuracy can be produced. Also if the steering angle is know to the algorithm this can help in improving the ROI to find vehicles on the curves.
 
  
-
-
-
-
-
-
-
