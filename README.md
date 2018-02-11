@@ -86,8 +86,10 @@ several configurations of window sizes and positions, with various overlaps in t
 
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_1.png)
 ## heat_map <br>
-
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_3.png)
+## Load the Heat_map into the que to be able to track the previous heat map we have the 
+latest 8 heat maps save in the que which are Later Filtered. This trick helps us to track the vehicles in the image<br>
+
 ## Filtered heat_map (Tresholded Heat-map) <br>
 
 ![alt tag](https://github.com/raghu467/Vehicle-Detection-p5/blob/master/Readme_Images/pipeline_4.png)
